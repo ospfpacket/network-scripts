@@ -1,0 +1,11 @@
+#this is an access-port template on a cisco device
+template access-port
+ switchport mode access
+ switchport access vlan x
+ spanning-tree bpduguard enable
+ spanning-tree portfast
+ description This port has a template on it
+!
+interface ethernet 0/0
+ source template access-port
+ 
