@@ -1,0 +1,9 @@
+#this is a template for a trunk port on a cisco switch
+
+template trunk-port
+ sw trunk encap dot
+ sw mode trunk
+!
+interface ethernet 0/0
+ source template trunk-port
+!
