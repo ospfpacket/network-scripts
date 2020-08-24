@@ -1,0 +1,14 @@
+#You will want to add the following scripts to the internet router of your choice.
+
+Preferred Path:
+route-map as-path
+ set as-path prepend 25251
+route-map local-pref
+ set local-pref 200
+ 
+ 
+Non-preferred Path:
+route-map as-path
+ set as-path prepend 25251 25251 25251
+route-map local-pref
+ set local-pref 125
