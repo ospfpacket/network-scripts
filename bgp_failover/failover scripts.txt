@@ -1,4 +1,4 @@
-#You will want to add the following scripts to the internet router of your choice.
+#You will want to add the following scripts to the internet routers of your choice. One to the preferred path and one to the alternate path.
 
 Preferred Path:
 route-map as-path
